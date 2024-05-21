@@ -1,0 +1,113 @@
+header .collapse .nav-link:hover {
+    color: green !important;
+}
+
+header .collapse .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    width: 0;
+    height: 4px;
+    transition: all 0.5s;
+}
+
+header .collapse .nav-link:hover::before {
+    width: 100%;
+}
+
+/* css cyber carousel  */
+.cyber_carousel .carousel-item .carousel_content {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 43, 54, .5);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cyber_carousel .carousel-item .carousel_content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.cyber_carousel .carousel-item::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+header .collapse .active {
+    color: green !important;
+} 
+
+/* header .collapse .active::before {
+    width: 100%;
+    background: rgba(39, 43, 54, .5);
+} */
+
+
+/* css project  */
+
+.cyber_project .nav button.active{
+    background-color: green;
+    color: white !important;
+    border-color: green !important;
+}
+
+/* .cyber_project .col-4 p {
+    padding: 30px;
+    /* background-color: red; */
+    /* text-align: center; */
+/* } */ 
+
+.cyber_project .project_item img{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+.cyber_project .project_item {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 25px;
+    /* animation-name: zoomOut; */
+    /* animation-duration: 2s; */
+    /* animation-iteration-count: infinite; */
+}
+
+.cyber_project .project_item .project_item_text {
+    text-align: center;
+    padding: 20px 15px 30px 15px;
+    border: 2px solid transparent;
+    border-radius: 0 0 25px 25px;
+    border-top: none;
+    transition: all 0.5s;
+}
+.cyber_project .project_item:hover .project_item_text {
+    border-color: green;
+}
+
+.cyber_project .project_item:hover .project_item_text h3{
+    color: green;
+}
+
+@keyframes zoomOut{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
